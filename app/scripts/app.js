@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name dnd5App
+ * @name ddApp
  * @description
- * # dnd5App
+ * # ddApp
  *
  * Main module of the application.
  */
 angular
-  .module('dnd5App', [
+  .module('ddApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

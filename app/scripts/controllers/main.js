@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name dnd5App.controller:MainCtrl
+ * @name ddApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the dnd5App
+ * Controller of the ddApp
  */
-angular.module('dnd5App')
+angular.module('ddApp')
   .controller('MainCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

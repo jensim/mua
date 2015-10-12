@@ -3,7 +3,7 @@
 describe('Controller: AboutCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('dnd5App'));
+  beforeEach(module('ddApp'));
 
   var AboutCtrl,
     scope;
