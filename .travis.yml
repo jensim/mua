@@ -1,4 +1,8 @@
 sudo: false
+cache:
+  directories:
+    - node_modules
+    - bower_components
 language: node_js
 node_js:
   - 'iojs'
@@ -7,3 +11,4 @@ node_js:
 before_script:
   - 'npm install -g bower grunt-cli'
   - 'bower install'
+  
