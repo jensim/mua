@@ -1,9 +1,8 @@
-.DS_Store
-.nodemonignore
-.sass-cache/
+node_modules
+public
+.tmp
+.idea
+client/bower_components
+dist
+/server/config/local.env.js
 npm-debug.log
-node_modules/
-public/lib
-app/tests/coverage/
-.bower-*/
-.idea/
