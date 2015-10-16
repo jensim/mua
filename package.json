@@ -80,7 +80,7 @@
   "scripts": {
     "start": "node dist/server/app.js",
     "test": "grunt test",
-    "postinstall": "bower install && grunt build",
+    "postinstall": "grunt",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   },
   "private": true
