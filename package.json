@@ -78,7 +78,7 @@
   "scripts": {
     "start": "node server/app.js",
     "test": "grunt test",
-    "postinstall": " bower install && grunt",
+    "postinstall": " bower install && grunt --force;",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   },
   "private": true
