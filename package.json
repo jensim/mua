@@ -19,9 +19,7 @@
     "connect-mongo": "^0.8.1"
   },
   "devDependencies": {
-    "bower": "latest",
     "grunt": "~0.4.4",
-    "grunt-cli": "latest",
     "grunt-autoprefixer": "~0.7.2",
     "grunt-wiredep": "~1.8.0",
     "grunt-concurrent": "~0.5.0",
@@ -80,7 +78,6 @@
   "scripts": {
     "start": "node server/app.js",
     "test": "grunt test",
-    "postinstall": "bower install && grunt build",
     "update-webdriver": "node node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update"
   },
   "private": true
