@@ -19,6 +19,7 @@
     "connect-mongo": "^0.8.1"
   },
   "devDependencies": {
+    "bower": "latest",
     "grunt": "~0.4.4",
     "grunt-autoprefixer": "~0.7.2",
     "grunt-wiredep": "~1.8.0",
