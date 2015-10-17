@@ -1,4 +1,4 @@
-// Generated on 2015-10-16 using generator-angular-fullstack 2.1.1
+// Generated on 2015-10-17 using generator-angular-fullstack 2.1.1
 'use strict';
 
 module.exports = function (grunt) {
@@ -301,7 +301,7 @@ module.exports = function (grunt) {
     ngtemplates: {
       options: {
         // This should be the name of your apps angular module
-        module: 'ddApp',
+        module: 'dndToolApp',
         htmlmin: {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,

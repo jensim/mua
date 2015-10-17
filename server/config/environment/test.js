@@ -5,6 +5,6 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/dd-test'
+    uri: 'mongodb://localhost/dndtool-test'
   }
 };

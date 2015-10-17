@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ddApp')
+angular.module('dndToolApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
       'title': 'Home',

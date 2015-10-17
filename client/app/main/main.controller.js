@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ddApp')
+angular.module('dndToolApp')
   .controller('MainCtrl', function ($scope, $http) {
     $scope.awesomeThings = [];
 

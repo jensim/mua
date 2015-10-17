@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ddApp')
+angular.module('dndToolApp')
   .factory('Modal', function ($rootScope, $modal) {
     /**
      * Opens a modal
