@@ -2,17 +2,17 @@ sudo: false
 services: mongodb
 language: node_js
 node_js:
-  - '0.10'
-  - '0.11'
-  - '0.12'
-  - 'iojs'
+  - 0.10
+  - 0.11
+  - 0.12
+  - iojs
 matrix:
   allow_failures:
-    - 'iojs'
+    - iojs
 before_script:
   - npm install -g bower grunt-cli
   - bower install
 cache:
   directories:
     - node_modules
-    - bower_components
+    - client/bower_components
