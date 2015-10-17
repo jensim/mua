@@ -15,12 +15,12 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 
 ```
 $ npm install -g bower grunt grunt-cli
-$ bower install
 ```
 
 ## Installation
 
 ```
+$ bower install
 $ grunt
 ```
 
