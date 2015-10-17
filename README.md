@@ -10,3 +10,43 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 [![devDependency Status](https://david-dm.org/jensim/dd/dev-status.png)](https://david-dm.org/jensim/dd#info=devDependencies)
 
 [![GitHub version](https://badge.fury.io/gh/jensim%2Fdd.png)](https://badge.fury.io/gh/jensim%2Fdd)
+
+## Prerequisites
+
+```
+$ npm install -g bower grunt grunt-cli
+$ bower install
+```
+
+## Installation
+
+```
+$ grunt
+```
+
+## Developing
+
+```
+$ grunt serve
+```
+## Pushing to Heroku
+
+### First time
+
+```
+$ grunt
+$ cd dist
+$ heroku login
+$ # Username
+$ # Password
+$ heroku addons:create mongolab
+$ yo angular-fullstack:heroku
+```
+
+### Again and again
+
+```
+$ grunt
+$ cd dist
+$ grunt buildcontrol:heroku
+```
