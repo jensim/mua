@@ -20,7 +20,7 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 * Pushing to Heroku
   * [First time](#first-time)
   * [Again and again](#again-and-again)
-  * [Deploy first time, to old heroku repo](#deplou-first-time-to-old-heroku-repo)
+  * [Deploy first time, to old heroku repo](#deploy-first-time-to-old-heroku-repo)
 
 # Prerequisites
 
