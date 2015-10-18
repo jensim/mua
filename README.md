@@ -50,3 +50,13 @@ $ grunt
 $ cd dist
 $ grunt buildcontrol:heroku
 ```
+
+### Deploy first time, to old heroku repo
+
+```
+$ rm -rf dist
+$ heroku git:clone -a dnd-tool dist
+$ grunt
+$ cd dist
+$ grunt buildcontrol:heroku
+```
