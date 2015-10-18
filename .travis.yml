@@ -17,11 +17,11 @@ cache:
   directories:
   - node_modules
   - client/bower_components
-deploy:
-  provider: heroku
-  app: dnd-tool
-  skip_cleanup: true
-  on:
-    node_js: '0.12'
-  api_key:
-    secure: FhIuFjQiInHBdfZkRnZKhyALrC4H4UHEpyyoODcCL2si2FeoHFOlZ38gYAyqhoJNQYY70nsKu/xqJs1OdZc0Q/+viOHe02MmfftgpI5/O2eglEfVHqQFsuRLEX+pwqyct3BNKaYdWXerfXnEQtoJdwQMnBgtLwd00ZqetOqLS+lMIaf2BTwhb9Ho8Hob/o1qj9wJ1eOVPJY3SGUmNlxOveWBAS0awbwl0BVxzD/aQJjDXMOquEukrFEydV7HJ/37aAk4zi19jrQ84KUxBMpmnR0VpCmQ6CSR0KLvlG558rOD3TEYizKjNCLZhEJt8bELk+RNQKy5wEhDw8I7zdbjNVgsnicx6uNDoXpWlk+eHU2HmqmcSZUtIY/Lsif7U9DYI5gc9so/3tN/JJRS9BsNPS0jZcSIl5JjLRsGWvRI4t4N8oRp+XZ8J3cNGZrjGL6luaovw2ZgW663LVo5wY44+WEdJOFwS4Loz+p+9uB51VrujqBw8c2XFbgFbNoAxdydujFjG0ypruWfZCHosGIsOGoyBhad3n3E79Qp7JmpbW6iR38PZ0wm6iDN5IzAjjpmKeOZJhBrZYPZqoBVKrEQu2a1762uZL+W+Ifej44awwP7WC+JbtzWVAJajHYcunI4WUjXFENGT/f4iExTc38+iIqdDRAcjNZo95ZdVU73ze4=
+#deploy:
+#  provider: heroku
+#  app: dnd-tool
+#  skip_cleanup: true
+#  on:
+#    node_js: '0.12'
+#  api_key:
+#    secure: FhIuFjQiInHBdfZkRnZKhyALrC4H4UHEpyyoODcCL2si2FeoHFOlZ38gYAyqhoJNQYY70nsKu/xqJs1OdZc0Q/+viOHe02MmfftgpI5/O2eglEfVHqQFsuRLEX+pwqyct3BNKaYdWXerfXnEQtoJdwQMnBgtLwd00ZqetOqLS+lMIaf2BTwhb9Ho8Hob/o1qj9wJ1eOVPJY3SGUmNlxOveWBAS0awbwl0BVxzD/aQJjDXMOquEukrFEydV7HJ/37aAk4zi19jrQ84KUxBMpmnR0VpCmQ6CSR0KLvlG558rOD3TEYizKjNCLZhEJt8bELk+RNQKy5wEhDw8I7zdbjNVgsnicx6uNDoXpWlk+eHU2HmqmcSZUtIY/Lsif7U9DYI5gc9so/3tN/JJRS9BsNPS0jZcSIl5JjLRsGWvRI4t4N8oRp+XZ8J3cNGZrjGL6luaovw2ZgW663LVo5wY44+WEdJOFwS4Loz+p+9uB51VrujqBw8c2XFbgFbNoAxdydujFjG0ypruWfZCHosGIsOGoyBhad3n3E79Qp7JmpbW6iR38PZ0wm6iDN5IzAjjpmKeOZJhBrZYPZqoBVKrEQu2a1762uZL+W+Ifej44awwP7WC+JbtzWVAJajHYcunI4WUjXFENGT/f4iExTc38+iIqdDRAcjNZo95ZdVU73ze4=
