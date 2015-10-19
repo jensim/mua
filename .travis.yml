@@ -11,6 +11,7 @@ node_js:
 #    - node_js: '0.11'
 #    - node_js: 'iojs'
 before_script:
+  - gem install sass heroku
   - echo 'machine api.heroku.com' > ~/.netrc
   - echo '  login '$HEROKU_USER >> ~/.netrc
   - echo '  password '$HEROKU_API_KEY >> ~/.netrc
@@ -19,7 +20,6 @@ before_script:
   - echo '  password '$HEROKU_API_KEY >> ~/.netrc
   - heroku git:clone --app dnd-tool dist  
   - npm install -g bower grunt-cli
-  - gem install sass
   - bower install
 cache:
   directories:
