@@ -19,8 +19,8 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 * [Developing](#developing)
 * Pushing to Heroku
   * [First time](#first-time)
+    * [Deploy first time, to old heroku repo](#deploy-first-time-to-old-heroku-repo)
   * [Again and again](#again-and-again)
-  * [Deploy first time, to old heroku repo](#deploy-first-time-to-old-heroku-repo)
 
 # Prerequisites
 
@@ -55,19 +55,20 @@ $ heroku addons:create mongolab
 $ yo angular-fullstack:heroku
 ```
 
-## Again and again
+### Deploy first time, to old heroku repo
 
 ```bash
+$ rm -rf dist
+$ heroku git:clone -a dnd-tool dist
 $ grunt
 $ cd dist
 $ grunt buildcontrol:heroku
 ```
 
-## Deploy first time, to old heroku repo
+
+## Again and again
 
 ```bash
-$ rm -rf dist
-$ heroku git:clone -a dnd-tool dist
 $ grunt
 $ cd dist
 $ grunt buildcontrol:heroku
