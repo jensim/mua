@@ -27,5 +27,5 @@ cache:
     - node_modules
     - client/bower_components
 after_success :
-  - grunt buildcontrol:heroku
+  - cd dist && grunt buildcontrol:heroku
   
