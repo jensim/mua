@@ -2,12 +2,17 @@
 
 angular.module('dndToolApp').controller('MutantCtrl', function ($scope, $log, $localStorage, $interval, mutantStaticdataFactory, mutantService, mutantCalcFactory) {
 
+	if (!$localStorage) {
+		$log.error('$localStorage undefined');
+	}
+
 	var storage, flatData,
 		jsonLog = function (j) {
 			$log.log(JSON.stringify(j, null, '\t'));
 		},
 		rebindStorages = function () {
 			var stopTime = $interval(function () {
+
 				if ($localStorage.storage && $localStorage.flatData) {
 					storage = $localStorage.storage;
 					$scope.storage = $localStorage.storage;
