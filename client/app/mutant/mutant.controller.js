@@ -247,14 +247,13 @@ angular.module('dndToolApp').controller('MutantCtrl', function ($scope, $log, $l
 			storage.activeCharacter.items.push(newItem);
 			$scope.itemEdit = newItem;
 		} else {
-			var newItem = {
+			$scope.itemEdit = {
 				name: 'Nytt föremål',
 				description: '',
 				quantity: 1,
 				cost: 0
 			};
-			storage.activeCharacter.items.push(newItem);
-			$scope.itemEdit = newItem;
+			storage.activeCharacter.items.push($scope.itemEdit);
 		}
 	};
 	$scope.editItem = function (item) {
