@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('dndToolApp').controller('MutantCtrl', function ($scope, $log, $localStorage, $interval, mutantStaticdataFactory) {
+angular.module('dndToolApp').controller('MutantCtrl', function ($scope, $log, $localStorage, $interval, mutantStaticdataFactory, mutantService, mutantCalcFactory) {
 	$scope.message = 'Hello';
 
 	var storage, flatData,
