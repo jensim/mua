@@ -39,6 +39,9 @@ angular.module('dndToolApp').factory('mutantStaticdataFactory', function ($http,
 	})();
 
 	return {
+		setStaticData: function () {
+			storageMS();
+		},
 		resetStaticData: function () {
 			storageMS(true);
 		},

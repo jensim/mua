@@ -17,6 +17,8 @@ angular.module('dndToolApp').controller('MutantCtrl', function ($scope, $log, $l
 					storage.activeCharacter = storage.characters ? storage.characters[0] : undefined;
 
 					$interval.cancel(stopTime);
+				} else {
+					mutantStaticdataFactory.setStaticData();
 				}
 			}, 250);
 		};
