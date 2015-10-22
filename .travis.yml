@@ -3,29 +3,19 @@ services: mongodb
 language: node_js
 node_js:
   - '0.10'
-#  - '0.11'
-#  - '0.12'
-#  - 'iojs'
-#matrix:
-#  allow_failures:
-#    - node_js: '0.11'
-#    - node_js: 'iojs'
+  - '0.11'
+  - '0.12'
+  - 'iojs'
+matrix:
+  allow_failures:
+    - node_js: '0.11'
+    - node_js: 'iojs'
 before_script:
-  - rvm install 2.2.2
-  - gem install sass heroku
-  - echo 'machine api.heroku.com' > ~/.netrc
-  - echo '  login '$HEROKU_USER >> ~/.netrc
-  - echo '  password '$HEROKU_API_KEY >> ~/.netrc
-  - echo 'machine git.heroku.com' >> ~/.netrc
-  - echo '  login '$HEROKU_USER >> ~/.netrc
-  - echo '  password '$HEROKU_API_KEY >> ~/.netrc
-  - heroku git:clone --app dnd-tool dist  
+  - gem install sass
   - npm install -g bower grunt-cli
   - bower install
 cache:
   directories:
     - node_modules
     - client/bower_components
-after_success :
-  - cd dist && grunt buildcontrol:heroku
-  
+
