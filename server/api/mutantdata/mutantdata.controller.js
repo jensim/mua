@@ -5,6 +5,221 @@ var Tabletop = require('tabletop');
 var listeners = [];
 var mutantData;
 var mutantDataGet = true;
+
+var version = 3.0;
+var attrPrimShort = [
+	{
+		name: 'STY'
+			},
+	{
+		name: 'FYS'
+			},
+	{
+		name: 'STO'
+			},
+	{
+		name: 'SMI'
+			},
+	{
+		name: 'INT'
+			},
+	{
+		name: 'VIL'
+			},
+	{
+		name: 'PER'
+			}
+		];
+var attrPrim = {
+	STY: {
+		name: 'Styrka',
+		short: 'STY',
+		description: '',
+		value: 5,
+		trained: 0,
+		mod: 0
+	},
+	FYS: {
+		name: 'Fysik',
+		short: 'FYS',
+		description: '',
+		value: 5,
+		trained: 0,
+		mod: 0
+	},
+	STO: {
+		name: 'Storlek',
+		short: 'STO',
+		description: '',
+		value: 5,
+		trained: 0,
+		mod: 0
+	},
+	SMI: {
+		name: 'Smidighet',
+		short: 'SMI',
+		description: '',
+		value: 5,
+		trained: 0,
+		mod: 0
+	},
+	INT: {
+		name: 'Intelligens',
+		short: 'INT',
+		description: '',
+		value: 5,
+		trained: 0,
+		mod: 0
+	},
+	VIL: {
+		name: 'Vilja',
+		short: 'VIL',
+		description: '',
+		value: 5,
+		trained: 0,
+		mod: 0
+	},
+	PER: {
+		name: 'Personlighet',
+		short: 'PER',
+		description: '',
+		value: 5,
+		trained: 0,
+		mod: 0
+	}
+};
+var skadeBonus = {
+	0: '-2D4',
+	7: '-1D6',
+	11: '-1D4',
+	15: '-1D3',
+	17: '-1D2',
+	19: '-1',
+	21: '',
+	24: '+1',
+	26: '1D2',
+	28: '1D3',
+	30: '1D4',
+	34: '1D6',
+	38: '2D4',
+	46: '2D6',
+	58: '3D6',
+	70: '4D6',
+	82: '5D6'
+};
+var attrSec = {
+	sb: {
+		name: 'SKADEBONUS (SB)',
+		description: 'Enl tabell',
+		value: 0
+	},
+	ib: {
+		name: 'INITIATIVBONUS (IB)',
+		description: 'SMI',
+		value: 0
+	},
+	bf: {
+		name: 'BÄRFÖRMÅGA (BF)',
+		description: 'STY. Men varje kilo över detta ger 1% straff på SMI-baserade färdigheter.',
+		value: 0
+	},
+	rea: {
+		name: 'REAKTIONSVÄRDE (REA)',
+		description: 'PER %',
+		value: 0
+	},
+	ryk: {
+		name: 'RYKTE',
+		description: 'Kan förtjänas, IMM kan välja.',
+		value: 0
+	},
+	sts: {
+		name: 'STATUS',
+		description: 'Kan förtjänas, IMM kan välja.',
+		value: 0
+	},
+	ffstrid: {
+		name: 'FF – STRID',
+		description: 'SMI / 5 avrundat nedåt',
+		value: 0
+	},
+	ffspring: {
+		name: 'FF – SPRINGA',
+		description: 'SMI / 2 avrundat nedåt',
+		value: 0
+	},
+	ffsprint: {
+		name: 'FF – SPRINT',
+		description: 'SMI avrundat nedåt',
+		value: 0
+	},
+	kp: {
+		name: 'KROPPSPOÄNG (KP)',
+		description: 'STO + FYS',
+		value: 0
+	},
+	tt: {
+		name: 'TRAUMATRÖSKEL (TT)',
+		description: '(STO + FYS) / 2',
+		value: 0
+	}
+};
+var weaponReach = {
+	melee: {
+		name: 'Närstrid',
+		aproxDist: '5 m',
+		exWeapon: 'Närstrid'
+	},
+	close: {
+		name: 'Nära',
+		aproxDist: '10 m',
+		exWeapon: 'Pistol'
+	},
+	short: {
+		name: 'Kort',
+		aproxDist: '25 m',
+		exWeapon: 'Hagelgevär'
+	},
+	medium: {
+		name: 'Menium',
+		aproxDist: '50 m',
+		exWeapon: 'K-pist'
+	},
+	far: {
+		name: 'Långt',
+		aproxDist: '100 m',
+		exWeapon: 'Automatgevär'
+	},
+	veryFar: {
+		name: 'Mycket långt',
+		aproxDist: '200 m',
+		exWeapon: 'Jaktgevär'
+	},
+	extremlyFar: {
+		name: 'Extremt långt',
+		aproxDist: '400 m',
+		exWeapon: 'Prickskyttevapen'
+	}
+};
+var bodyParts = {
+	1: 'Höger ben',
+	2: 'Vänster ben',
+	3: 'Bål',
+	4: 'Höger arm',
+	5: 'Vänster arm',
+	6: 'Huvudet',
+	7: 'Extra kroppsdel 1',
+	8: 'Extra kroppsdel 2',
+	9: 'Extra kroppsdel 3',
+	10: 'Extra kroppsdel 4',
+	11: 'Extra kroppsdel 5',
+	12: 'Extra kroppsdel 6',
+	13: 'Extra kroppsdel 7',
+	14: 'Extra kroppsdel 8',
+	15: 'Extra kroppsdel 9',
+	16: 'Extra kroppsdel 10',
+};
+
 var gSheets = [
 	{
 		key: 'klasser',
@@ -198,42 +413,23 @@ var tableTopCallback = function (data) {
 		return;
 	}
 	var staticData = {
-		//version: version,
+		version: version,
 		klasses: {},
-		//attrPrimShort: attrPrimShort,
-		//attrPrim: attrPrim,
+		attrPrimShort: attrPrimShort,
+		attrPrim: attrPrim,
 		skills: {},
 		jobs: {},
-		//skadeBonus: skadeBonus,
-		//attrSec: attrSec,
+		skadeBonus: skadeBonus,
+		attrSec: attrSec,
 		powers: {},
-		//weaponReach: weaponReach,
+		weaponReach: weaponReach,
 		weapons: {},
-		//bodyParts: bodyParts,
+		bodyParts: bodyParts,
 		armors: {},
 		shields: [],
 		gear: {}
 	};
 
-	/*
-	console.log('Tabletop data: ');
-	_(data).forEach(function (page, iPage) {
-		if (page.column_names && page.name === 'jobs') {
-			tmpData[page.name] = {
-				name: page.name,
-				elements: page.elements
-			};
-
-			console.log('SHEET: ' + page.name);
-			console.log('COLUMN_NAMES: ' + page.column_names);
-			page.elements.forEach(function (element) {
-				console.log('ROW: ' + JSON.stringify(element));
-			});
-			console.log('./' + page.name);
-			console.log('-----\n');
-		}
-	});
-	*/
 	gSheets.forEach(function (s) {
 		try {
 			if (!s.key) {
