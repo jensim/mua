@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('dndToolApp').factory('mutantCalcFactory', function ($localStorage, $log) {
+angular.module('dndToolApp').factory('mutantCalcFactory', function ($localStorage) {
 	// AngularJS will instantiate a singleton by calling "new" on this function
 
 	var calcSecondarySkadeBonus = function () { //STY + STO

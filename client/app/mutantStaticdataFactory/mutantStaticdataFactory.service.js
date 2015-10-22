@@ -2,8 +2,7 @@
 
 angular.module('dndToolApp').factory('mutantStaticdataFactory', function ($http, $localStorage, $log) {
 	// AngularJS will instantiate a singleton by calling "new" on this function
-	var dataLoaded = false,
-		staticData,
+	var staticData,
 		storageM = function (forceReset) {
 			if ($localStorage.storage === undefined || $localStorage.storage.version === undefined) {
 				if (staticData === undefined) {
