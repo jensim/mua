@@ -55,7 +55,7 @@ angular.module('dndToolApp').factory('mutantService', function ($localStorage, $
 				});
 			});
 			staticStorage.skills.forEach(function (skill) {
-				if (skill.natural) {
+				if (skill.natural === true || skill.natural === 'TRUE') {
 					addSkill(skill);
 				}
 			});
