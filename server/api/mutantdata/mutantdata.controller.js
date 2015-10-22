@@ -295,9 +295,9 @@ var loadMutantData = function () {
 				} else if (element.multiPart && element.multiPart === 'FALSE') {
 					element.multiPart = false;
 				}
-				if (element.natural && element.natural == 'TRUE') { //SKILL.natural
+				if (element.natural && element.natural === 'TRUE') { //SKILL.natural
 					element.natural = true;
-				} else if (element.natural && element.natural == 'FALSE') {
+				} else if (element.natural && element.natural === 'FALSE') {
 					element.natural = false;
 				}
 			}
