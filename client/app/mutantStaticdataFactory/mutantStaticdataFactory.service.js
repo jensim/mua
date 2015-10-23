@@ -20,12 +20,13 @@ angular.module('dndToolApp').factory('mutantStaticdataFactory', function ($http,
 			if ($localStorage.flatData === undefined || $localStorage.flatData.version === undefined) {
 				if (staticData === undefined || $localStorage.flatData.version !== staticData.version || forceReset === true) {
 					$http.get('/api/mutantdata').then(
-						function (req, res) {
+						function (res) {
 							staticData = res.data;
 							$localStorage.flatData = staticData;
 							$log.debug(res.data);
+
 						},
-						function (req, res) {
+						function (res) {
 							$log.error(res.status + ': Server responded poorly..');
 						});
 				}
