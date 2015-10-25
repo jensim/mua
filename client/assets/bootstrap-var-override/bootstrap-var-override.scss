@@ -5,11 +5,11 @@ $gray: lighten(#000, 33.5%) !default; // #555
 $gray-light: lighten(#000, 60%) !default; // #999
 $gray-lighter: lighten(#000, 93.5%) !default; // #eee
 //brand colors
-$brand-primary: #ff0700;
+$brand-primary: #00406f;
 $brand-success: #074d07;
 $brand-info: #0c5165;
-$brand-warning: #763905;
-$brand-danger: #65211f;
+$brand-warning: #cc6005;
+$brand-danger: #cb0c07;
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
@@ -26,9 +26,9 @@ $border-radius-base: 0;
 $border-radius-large: 0;
 $border-radius-small: 0;
 //** Global color for active items (e.g., navs or dropdowns).
-$component-active-color: $brand-primary !default;
+$component-active-color: $text-color !default;
 //** Global background color for active items (e.g., navs or dropdowns).
-$component-active-bg: darken($brand-primary, 75%) !default;
+$component-active-bg: $brand-primary !default;
 //** Width of the `border` for generating carets that indicator dropdowns.
 $caret-width-base: 4px !default;
 //** Carets increase slightly in size for larger components.
@@ -123,7 +123,7 @@ $list-group-active-color: $component-active-color !default;
 //** Background color of active list items
 $list-group-active-bg: $component-active-bg !default;
 //** Border color of active list elements
-$list-group-active-border: $list-group-active-bg !default;
+$list-group-active-border: $list-group-border !default;
 //** Text color for content within active list items
 $list-group-active-text-color: lighten($list-group-active-bg, 40%) !default;
 //** Text color of disabled list items
