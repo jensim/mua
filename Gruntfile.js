@@ -86,7 +86,7 @@ module.exports = function (grunt) {
 			},
 			sass: {
 				files: [
-          '<%= yeoman.client %>/{app,components}/**/*.{scss,sass}'],
+          '<%= yeoman.client %>/{app,components,assets}/**/*.{scss,sass}'],
 				tasks: ['sass', 'autoprefixer']
 			},
 			jade: {
