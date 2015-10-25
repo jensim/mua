@@ -1,14 +1,20 @@
 $icon-font-path: '/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/';
 $fa-font-path: '/bower_components/font-awesome/fonts';
-$fi-path: "/bower_components/foundation-icon-fonts";
-@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+$fi-path: '/bower_components/foundation-icon-fonts';
+@import '../assets/bootstrap-var-override/bootstrap-var-override';
 @import 'font-awesome/scss/font-awesome';
 @import 'foundation-icon-fonts/_foundation-icons';
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 
 /**
  * App-wide Styles
  */
 
+.navbar-inverse {
+	border-bottom-width: 1px;
+	border-bottom-color: #999;
+	border-bottom-style: solid;
+}
 .browsehappy {
 	margin: 0.2em 0;
 	background: #ccc;

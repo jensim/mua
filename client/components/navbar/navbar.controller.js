@@ -1,13 +1,15 @@
 'use strict';
 
 angular.module('dndToolApp').controller('NavbarCtrl', function ($scope, $location, Auth) {
-	$scope.menu = [{
-		'title': 'Home',
-		'link': '/'
-    }, {
-		'title': 'Mutant: UA',
-		'link': '/mutant'
-		}];
+	$scope.menu = [
+		{
+			'title': 'UA',
+			'link': '/mutant'
+		}, {
+			'title': 'År noll',
+			'link': '/zero'
+		}
+	];
 
 	$scope.isCollapsed = true;
 	$scope.isLoggedIn = Auth.isLoggedIn;

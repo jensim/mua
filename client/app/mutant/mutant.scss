@@ -1,43 +1,42 @@
 .mutant {
-	font-family: monospace;
-}
-input[type="number"] {
-	width: 3em;
-}
-.glyphicon,
-.fa,
-.fi-die-one,
-.fi-die-two,
-.fi-die-three,
-.fi-die-four,
-.fi-die-five,
-.fi-die-six {
-	font-size: 1.3em;
-}
-.anim-fade {
-	-webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-	-moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-	-ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-	-o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-	transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-	position: relative;
-	display: block;
-}
-.anim-fade.ng-enter,
-.anim-fade.ng-leave.ng-leave-active,
-.anim-fade.ng-hide {
-	opacity: 0;
-}
-.anim-fade.ng-leave,
-.anim-fade.ng-enter.ng-enter-active {
-	opacity: 1;
-}
-.scrollable-menu {
-	height: auto;
-	max-height: 200px;
-	overflow-x: hidden;
-}
-.list-group-item-highlight:hover {
-	background-color: cornflowerblue;
-	color: aliceblue;
+	input[type="number"] {
+		width: 3em;
+	}
+	.glyphicon,
+	.fa,
+	.fi-die-one,
+	.fi-die-two,
+	.fi-die-three,
+	.fi-die-four,
+	.fi-die-five,
+	.fi-die-six {
+		font-size: 1.3em;
+	}
+	.anim-fade {
+		-webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+		-moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+		-ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+		-o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+		transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+		position: relative;
+		display: block;
+	}
+	.anim-fade.ng-enter,
+	.anim-fade.ng-leave.ng-leave-active,
+	.anim-fade.ng-hide {
+		opacity: 0;
+	}
+	.anim-fade.ng-leave,
+	.anim-fade.ng-enter.ng-enter-active {
+		opacity: 1;
+	}
+	.scrollable-menu {
+		height: auto;
+		max-height: 200px;
+		overflow-x: hidden;
+	}
+	.list-group-item-highlight:hover {
+		background-color: cornflowerblue;
+		color: aliceblue;
+	}
 }

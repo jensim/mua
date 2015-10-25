@@ -11,7 +11,7 @@ angular.module('dndToolApp', [
 ])
 	.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 		$urlRouterProvider
-			.otherwise('/');
+			.otherwise('/mutant');
 
 		$locationProvider.html5Mode(true);
 		$httpProvider.interceptors.push('authInterceptor');
