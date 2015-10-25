@@ -10,6 +10,10 @@ $fi-path: '/bower_components/foundation-icon-fonts';
  * App-wide Styles
  */
 
+select {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
 .navbar-inverse {
 	border-bottom-width: 1px;
 	border-bottom-color: #999;

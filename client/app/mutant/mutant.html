@@ -115,15 +115,15 @@
 							<div ng-show="a === attrPrimEdit">
 								<li class="list-group-item list-group-item-info">
 									<label class="control-label">Modifikation:</label>
-									<input ng-model="a.mod" maxlength="2" size="2" min="0" type="number" class="pull-right">
+									<input ng-model="a.mod" maxlength="2" size="2" min="0" type="number" class="form-control pull-right">
 								</li>
 								<li class="list-group-item list-group-item-info">
 									<label class="control-label">Tränad med erf:</label>
-									<input ng-model="a.trained" maxlength="2" size="2" min="0" type="number" class="pull-right">
+									<input ng-model="a.trained" maxlength="2" size="2" min="0" type="number" class="form-control pull-right">
 								</li>
 								<li class="list-group-item list-group-item-info">
 									<label class="control-label">GE-poäng:</label>
-									<input ng-model="a.value" maxlength="2" size="2" min="0" type="number" class="pull-right">
+									<input ng-model="a.value" maxlength="2" size="2" min="0" type="number" class="form-control pull-right">
 								</li>
 							</div>
 						</div>
@@ -223,27 +223,27 @@
 									<label class="control-label">
 										Skapelsepoäng
 									</label>
-									<input class="pull-right" type="number" ng-model="a.valueSp" maxlength="4" size="4" min="0">
+									<input class="form-control pull-right" type="number" ng-model="a.valueSp" maxlength="4" size="4" min="0">
 								</li>
 								<li class="list-group-item list-group-item-info">
 									<label class="control-label">
 										"Gratis" skapelsepoäng
 										<br/>(från andra källor)
 									</label>
-									<input class="pull-right" type="number" ng-model="a.valueSpFree" maxlength="2" size="2" min="0">
+									<input class="form-control pull-right" type="number" ng-model="a.valueSpFree" maxlength="2" size="2" min="0">
 								</li>
 								<li class="list-group-item list-group-item-info">
 									<label class="control-label">
 										Erfarenhetspoäng
 									</label>
-									<input class="pull-right" type="number" ng-model="a.valueErf" maxlength="2" size="2" min="0">
+									<input class="form-control pull-right" type="number" ng-model="a.valueErf" maxlength="2" size="2" min="0">
 								</li>
 								<li class="list-group-item list-group-item-info">
 									<label class="control-label">
 										"Gratis" erfarenhet
 										<br/>(från andra källor)
 									</label>
-									<input class="pull-right" type="number" ng-model="a.valueErfFree" maxlength="2" size="2" min="0">
+									<input class="form-control pull-right" type="number" ng-model="a.valueErfFree" maxlength="2" size="2" min="0">
 								</li>
 								<li class="list-group-item list-group-item-info">
 									<label class="control-label">
@@ -262,7 +262,7 @@
 										<br>Kom ihåg att det även kostar att muta
 										<br/>en mentor till inlärningen.
 									</label>
-									<input type="number" ng-model="a.postTrained" maxlength="2" size="2" min="2">
+									<input class="form-control" type="number" ng-model="a.postTrained" maxlength="2" size="2" min="2">
 								</li>
 								<li class="list-group-item list-group-item-info">
 									<div class="btn btn-warning btn-xs" ng-click="deleteSkill($index)">
@@ -301,7 +301,7 @@
 						<div class="input-group">
 							<label for="powerEdit.cost">Kostnad</label>
 							<br/>
-							<input name="powerEdit.cost" type="number" ng-model="powerEdit.cost">
+							<input name="powerEdit.cost" class="form-control" type="number" ng-model="powerEdit.cost">
 						</div>
 						<div class="input-group">
 							<label>Beskrivning</label>
@@ -332,7 +332,7 @@
 						<div class="input-group">
 							<label for="create.power.cost">Kostnad</label>
 							<br/>
-							<input name="create.power.cost" type="number" ng-model="create.power.cost">
+							<input name="create.power.cost" class="form-control" type="number" ng-model="create.power.cost">
 						</div>
 						<div class="input-group">
 							<label>Beskrivning</label>
@@ -391,7 +391,7 @@
 						</div>
 						<div class="input-group">
 							<label>INIT: </label>
-							<input name="weaponInit" ng-model="weaponEdit.init" type="number">
+							<input name="weaponInit" ng-model="weaponEdit.init" type="number" class="form-control">
 						</div>
 						<div class="input-group" style="display: inline-block;">
 							<label>SKADA: </label>
@@ -400,7 +400,7 @@
 						<dice-roller dice="{{weaponEdit.damage}}"></dice-roller>
 						<div class="input-group">
 							<label>PEN: </label>
-							<input name="weaponPen" ng-model="weaponEdit.penetration" type="number">
+							<input name="weaponPen" ng-model="weaponEdit.penetration" type="number" class="form-control">
 						</div>
 						<div class="input-group">
 							<label>RÄCKVIDD: </label>
@@ -412,19 +412,19 @@
 						</div>
 						<div class="input-group">
 							<label>PÅL: </label>
-							<input name="weaponDep" ng-model="weaponEdit.dep" type="number">
+							<input name="weaponDep" ng-model="weaponEdit.dep" type="number" class="form-control">
 							<label>/MAX: </label>
-							<input name="weaponDepMax" ng-model="weaponEdit.depmax" type="number">
+							<input name="weaponDepMax" ng-model="weaponEdit.depmax" type="number" class="form-control">
 						</div>
 						<div class="input-group">
 							<label>VIKT: </label>
-							<input name="weaponWeight" ng-model="weaponEdit.weight" type="number">
+							<input name="weaponWeight" ng-model="weaponEdit.weight" type="number" class="form-control">
 						</div>
 						<div class="input-group">
 							<label>AMMO</label>
-							<input name="weaponAmmo" ng-model="weaponEdit.ammo" type="number">
+							<input name="weaponAmmo" ng-model="weaponEdit.ammo" type="number" class="form-control">
 							<label>/MAX</label>
-							<input name="weaponAmmoMax" ng-model="weaponEdit.mag" type="number">
+							<input name="weaponAmmoMax" ng-model="weaponEdit.mag" type="number" class="form-control">
 						</div>
 					</div>
 				</div>
@@ -499,7 +499,7 @@
 						</div>
 						<div class="input-group">
 							<label>ABS:</label>
-							<input type="number" class="form-control" ng-model="armorEdit.ABS">
+							<input class="form-control" ng-model="armorEdit.ABS">
 						</div>
 						<div class="input-group">
 							<label>BEG:</label>
