@@ -1,6 +1,8 @@
 .mutant {
 	input[type="number"] {
 		width: 5em;
+		color: $text-color;
+		background-color: $input-bg;
 	}
 	.glyphicon,
 	.fa,
@@ -36,7 +38,7 @@
 		overflow-x: hidden;
 	}
 	.list-group-item-highlight:hover {
-		background-color: cornflowerblue;
-		color: aliceblue;
+		background-color: $brand-danger;
+		//color: aliceblue;
 	}
 }

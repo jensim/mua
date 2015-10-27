@@ -382,49 +382,56 @@
 						</div>
 
 						<div class="input-group">
-							<label>VAPEN: </label>
-							<input name="weaponName" ng-model="weaponEdit.name" type="text">
+							<label class="control-label">VAPEN: </label>
+							<input class="form-control" name="weaponName" ng-model="weaponEdit.name" type="text">
 						</div>
 						<div class="input-group">
-							<label>FATTN: </label>
-							<input name="weaponFattn" ng-model="weaponEdit.fattn" type="text">
+							<label class="control-label">FATTN: </label>
+							<input class="form-control" name="weaponFattn" ng-model="weaponEdit.fattn" type="text">
 						</div>
 						<div class="input-group">
-							<label>INIT: </label>
+							<label class="control-label">INIT: </label>
+							<br/>
 							<input name="weaponInit" ng-model="weaponEdit.init" type="number" class="form-control">
 						</div>
 						<div class="input-group" style="display: inline-block;">
-							<label>SKADA: </label>
-							<input name="weaponDice" ng-model="weaponEdit.damage" type="text">
+							<label class="control-label">SKADA: </label>
+							<input name="weaponDice" ng-model="weaponEdit.damage" type="text" class="form-control">
 						</div>
 						<dice-roller dice="{{weaponEdit.damage}}"></dice-roller>
 						<div class="input-group">
-							<label>PEN: </label>
+							<label class="control-label">PEN: </label>
+							<br/>
 							<input name="weaponPen" ng-model="weaponEdit.penetration" type="number" class="form-control">
 						</div>
 						<div class="input-group">
-							<label>RÄCKVIDD: </label>
-							<select name="weaponReach" ng-model="weaponEdit.reach" ng-options="r.aproxDist for r in flatData.weaponReach"></select>
+							<label class="control-label">RÄCKVIDD: </label>
+							<select name="weaponReach" ng-model="weaponEdit.reach" ng-options="r.aproxDist for r in flatData.weaponReach" class="form-control"></select>
 						</div>
 						<div class="input-group">
-							<label>TÅL: </label>
-							<input name="weaponDur" ng-model="weaponEdit.durabillity" type="text">
+							<label class="control-label">TÅL: </label>
+							<br/>
+							<input name="weaponDur" ng-model="weaponEdit.durabillity" type="number" class="form-control">
 						</div>
 						<div class="input-group">
-							<label>PÅL: </label>
-							<input name="weaponDep" ng-model="weaponEdit.dep" type="number" class="form-control">
+							<label>PÅL: &nbsp; </label>
 							<label>/MAX: </label>
-							<input name="weaponDepMax" ng-model="weaponEdit.depmax" type="number" class="form-control">
+							<br/>
+							<input name="weaponDep" ng-model="weaponEdit.dep" type="number">
+							<input name="weaponDepMax" ng-model="weaponEdit.depmax" type="number">
 						</div>
 						<div class="input-group">
-							<label>VIKT: </label>
+							<label class="control-label">VIKT: </label>
+							<br/>
 							<input name="weaponWeight" ng-model="weaponEdit.weight" type="number" class="form-control">
 						</div>
 						<div class="input-group">
-							<label>AMMO</label>
-							<input name="weaponAmmo" ng-model="weaponEdit.ammo" type="number" class="form-control">
-							<label>/MAX</label>
-							<input name="weaponAmmoMax" ng-model="weaponEdit.mag" type="number" class="form-control">
+							<label class="control-label" for="weaponAmmo">AMMO: &nbsp; </label>
+
+							<label class="control-label" for="weaponAmmoMax">/MAX</label>
+							<br/>
+							<input name="weaponAmmo" id="weaponAmmo" ng-model="weaponEdit.ammo" type="number" class="form-control">
+							<input name="weaponAmmoMax" id="weaponAmmoMax" ng-model="weaponEdit.mag" type="number" class="form-control">
 						</div>
 					</div>
 				</div>

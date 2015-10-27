@@ -123,7 +123,7 @@ $list-group-active-color: $component-active-color !default;
 //** Background color of active list items
 $list-group-active-bg: $component-active-bg !default;
 //** Border color of active list elements
-$list-group-active-border: $list-group-border !default;
+$list-group-active-border: lighten($list-group-active-bg, 40%) !default;
 //** Text color for content within active list items
 $list-group-active-text-color: lighten($list-group-active-bg, 40%) !default;
 //** Text color of disabled list items
