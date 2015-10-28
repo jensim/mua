@@ -435,16 +435,7 @@ var tableTopCallback = function (data) {
 			if (!s.key) {
 				throw 'Error';
 			}
-			/* data[s.key].elements.forEach(function (e) {
-				data[s.key].column_names.forEach(function (c) {
-					if (e[c].charAt(0) === '[' && e[c].slice(-1) === ']') {
-						e[c] = e[c].slice(1, -1).split(',');
-						if (!Array.isArray(e[c])) {
-							e[c] = [e[c]];
-						}
-					}
-				});
-			});*/
+
 			if (s.subSubPlace) {
 				if (staticData[s.place][s.subPlace] === undefined) {
 					staticData[s.place][s.subPlace] = {};
@@ -495,6 +486,9 @@ var loadMutantData = function () {
 					element.natural = true;
 				} else if (element.natural && element.natural === 'FALSE') {
 					element.natural = false;
+				}
+				if (typeof element.fits === "string" && element.fits.charAt(0) === '[' && element.fits.charAt(element.fits.length - 1) === ']') {
+					element.fits = element.fits.splice(1, -1).split(',');
 				}
 			}
 		});
