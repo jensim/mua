@@ -417,8 +417,8 @@
 							<label>PÅL: &nbsp; </label>
 							<label>/MAX: </label>
 							<br/>
-							<input name="weaponDep" ng-model="weaponEdit.dep" type="number">
-							<input name="weaponDepMax" ng-model="weaponEdit.depmax" type="number">
+							<input name="weaponDep" ng-model="weaponEdit.dep" type="number" class="form-control">
+							<input name="weaponDepMax" ng-model="weaponEdit.depmax" type="number" class="form-control">
 						</div>
 						<div class="input-group">
 							<label class="control-label">VIKT: </label>
@@ -501,19 +501,23 @@
 
 					<div ng-show="armorEdit" class="form-group">
 						<div class="input-group">
-							<label>Name:</label>
+							<label class="control-label">Name:</label>
+							<br/>
 							<input type="text" class="form-control" ng-model="armorEdit.name">
 						</div>
 						<div class="input-group">
-							<label>ABS:</label>
-							<input class="form-control" ng-model="armorEdit.ABS">
+							<label class="control-label">ABS:</label>
+							<br/>
+							<input type="number" class="form-control" ng-model="armorEdit.ABS">
 						</div>
 						<div class="input-group">
-							<label>BEG:</label>
+							<label class="control-label">BEG:</label>
+							<br/>
 							<input type="number" class="form-control" ng-model="armorEdit.BEG">
 						</div>
 						<div class="input-group">
-							<label>Vikt:</label>
+							<label class="control-label">Vikt:</label>
+							<br/>
 							<input type="number" class="form-control" ng-model="armorEdit.weight">
 						</div>
 						<div class="input-group">
@@ -539,21 +543,21 @@
 					Köp rustning
 				</div>
 				<div class="panel-body" ng-show="armorFormEdit && !storage.activeCharacter.armorBody">
-					<div class="input-group">
-
-						<div ng-show="create.armor.bodyPart || create.armor.multiPart">
-							<div class="btn btn-primary btn-sm" ng-click="createArmor(create.armor)">
-								Lägg till
-							</div>
-							<div class="btn btn-sm" ng-click="createArmor(create.armor); moneyManage(create.armor.cost *-1);" ng-class="r.cost > storage.activeCharacter.money ? 'btn-danger':'btn-primary'">
-								Köp
-							</div>
+					<div ng-show="create.armor.bodyPart || create.armor.multiPart">
+						<div class="btn btn-primary btn-sm" ng-click="createArmor(create.armor)">
+							Lägg till
 						</div>
-
+						<div class="btn btn-sm" ng-click="createArmor(create.armor); moneyManage(create.armor.cost *-1);" ng-class="r.cost > storage.activeCharacter.money ? 'btn-danger':'btn-primary'">
+							Köp
+						</div>
+					</div>
+					<div class="input-group">
 						<label>Läs in rustning &nbsp;</label>
 						<select class="selectpicker form-control" ng-model="create.armortype" ng-options="a.name for a in flatData.armors"></select>
 						<select class="selectpicker form-control" ng-model="create.armor" ng-options="a.name for a in create.armortype.armors" ng-show="create.armortype"></select>
-						<select class="selectpicker form-control" ng-model="create.armor.bodyPart" ng-options="i as flatData.bodyParts[i] for i in create.armor.fits | filter:armorFilter" ng-show="create.armor && !create.armor.multiPart"></select>
+					</div>
+					<div ng-show="create.armor">
+						<select class="selectpicker form-control" ng-model="create.armor.bodyPart" ng-options="i as flatData.bodyParts[i] for i in create.armor.fits | filter:armorFilter" ng-show="!create.armor.multiPart"></select>
 						<div ng-show="create.armor.multiPart">
 							Sitter på kroppsdelar:
 							<div ng-repeat="i in create.armor.fits">{{flatData.bodyParts[i]}}</div>
@@ -587,20 +591,22 @@
 					</ul>
 					<div ng-show="itemEdit" class="input-group">
 						<div class="input-group">
-							<label>Name:</label>
+							<label class="control-label">Name:</label>
 							<input type="text" class="form-control" ng-model="itemEdit.name">
 						</div>
 						<div class="input-group">
-							<label>Antal:</label>
-							<input type="text" class="form-control" ng-model="itemEdit.quantity">
+							<label class="control-label">Antal:</label>
+							<br/>
+							<input type="number" class="form-control" ng-model="itemEdit.quantity">
 						</div>
 						<div class="input-group">
-							<label>Beskrivning:</label>
+							<label class="control-label">Beskrivning:</label>
 							<input type="text" class="form-control" ng-model="itemEdit.description">
 						</div>
 						<div class="input-group">
-							<label>Värde:</label>
-							<input type="text" class="form-control" ng-model="itemEdit.cost">
+							<label class="control-label">Värde:</label>
+							<br/>
+							<input type="number" class="form-control" ng-model="itemEdit.cost">
 						</div>
 					</div>
 				</div>

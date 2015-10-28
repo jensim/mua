@@ -17,8 +17,11 @@ angular.module('dndToolApp').factory('mutantStaticdataFactory', function ($http,
 			}
 		},
 		storageMS = function (forceReset) {
+			if (forceReset === true) {
+				$localStorage.flatData = undefined;
+			}
 			if ($localStorage.flatData === undefined || $localStorage.flatData.version === undefined) {
-				if (staticData === undefined || $localStorage.flatData.version !== staticData.version || forceReset === true) {
+				if (staticData === undefined) {
 					$http.get('/api/mutantdata').then(
 						function (res) {
 							staticData = res.data;
@@ -29,6 +32,8 @@ angular.module('dndToolApp').factory('mutantStaticdataFactory', function ($http,
 						function (res) {
 							$log.error(res.status + ': Server responded poorly..');
 						});
+				} else if ($localStorage.flatData.version !== staticData.version || forceReset === true) {
+					$localStorage.flatData = staticData;
 				}
 			}
 		};

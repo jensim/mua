@@ -476,19 +476,33 @@ var loadMutantData = function () {
 			parseNumbers: true,
 			callback: tableTopCallback,
 			postProcess: function (element) {
-
-				if (element.multiPart && element.multiPart === 'TRUE') {
-					element.multiPart = true;
+				if (element.multipart && element.multipart === 'TRUE') {
+					delete element.multipart;
+					element.multipart = true;
+				} else if (element.multiPart && element.multiPart === 'TRUE') {
+					element.multipart = true;
+				} else if (element.multipart && element.multipart === 'FALSE') {
+					delete element.multipart;
+					element.multipart = false;
 				} else if (element.multiPart && element.multiPart === 'FALSE') {
-					element.multiPart = false;
+					element.multipart = false;
 				}
 				if (element.natural && element.natural === 'TRUE') { //SKILL.natural
 					element.natural = true;
 				} else if (element.natural && element.natural === 'FALSE') {
 					element.natural = false;
 				}
-				if (typeof element.fits === "string" && element.fits.charAt(0) === '[' && element.fits.charAt(element.fits.length - 1) === ']') {
-					element.fits = element.fits.splice(1, -1).split(',');
+				if (element.fits) {
+					var tmpArr = [];
+					if (typeof element.fits === 'string' && element.fits.charAt(0) === '[' && element.fits.charAt(element.fits.length - 1) === ']') {
+						var tmpArr2 = element.fits.slice(1, -1).split(',');
+						tmpArr2.forEach(function (e) {
+							if (!isNaN(Number(e)) && Number(e) > 0 && Number(e) < 20) {
+								tmpArr.push(Number(e));
+							}
+						});
+					}
+					element.fits = tmpArr;
 				}
 			}
 		});
