@@ -17,7 +17,6 @@ function onConnect(socket) {
 	});
 
 	// Insert sockets below
-	require('../api/mutantdata/mutantdata.socket').register(socket);
 	require('../api/thing/thing.socket').register(socket);
 }
 
