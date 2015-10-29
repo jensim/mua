@@ -168,9 +168,11 @@ angular.module('dndToolApp').factory('mutantCalcFactory', function ($localStorag
 			var sum = 0,
 				storage = $localStorage.storage;
 			storage.activeCharacter.armors.forEach(function (a) {
-				if (Number(a.bodyPart) === Number(part) && a.wearing) {
+				if (a.bodyPart === part && a.wearing) {
 					sum += a.ABS;
-				} else if (angular.isArray(a.bodyPart) && a.wearing && a.bodyPart.indexOf(part) !== -1) {
+				} else if (a.bodyPart.toString() === part.toString() && a.wearing) {
+					sum += a.ABS;
+				} else if (angular.isArray(a.bodyPart) && a.wearing && (a.bodyPart.indexOf(Number(part)) !== -1 || a.bodyPart.indexOf(part.toString()) !== -1)) {
 					sum += a.ABS;
 				}
 			});

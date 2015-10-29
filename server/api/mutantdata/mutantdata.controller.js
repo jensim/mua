@@ -498,7 +498,7 @@ var loadMutantData = function () {
 						var tmpArr2 = element.fits.slice(1, -1).split(',');
 						tmpArr2.forEach(function (e) {
 							if (!isNaN(Number(e)) && Number(e) > 0 && Number(e) < 20) {
-								tmpArr.push(Number(e));
+								tmpArr.push(e);
 							}
 						});
 					}
