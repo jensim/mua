@@ -2,7 +2,7 @@
 
 angular.module('dndToolApp').config(function ($stateProvider) {
 	$stateProvider.state('mutant', {
-		url: '/mutant',
+		url: '/',
 		templateUrl: 'app/mutant/mutant.html',
 		controller: 'MutantCtrl'
 	});

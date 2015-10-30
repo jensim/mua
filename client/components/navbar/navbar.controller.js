@@ -4,7 +4,7 @@ angular.module('dndToolApp').controller('NavbarCtrl', function ($scope, $locatio
 	$scope.menu = [
 		{
 			'title': 'UA',
-			'link': '/mutant'
+			'link': '/'
 		}, {
 			'title': 'År noll',
 			'link': '/zero'
