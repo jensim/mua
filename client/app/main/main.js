@@ -1,10 +1,9 @@
 'use strict';
 
 angular.module('dndToolApp').config(function ($stateProvider) {
-	$stateProvider
-		.state('main', {
-			url: '/',
-			templateUrl: 'app/main/main.html',
-			controller: 'MainCtrl'
-		});
+	$stateProvider.state('main', {
+		url: '/',
+		templateUrl: 'app/main/main.html',
+		controller: 'MainCtrl'
+	});
 });

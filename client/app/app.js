@@ -10,8 +10,7 @@ angular.module('dndToolApp', [
 	'ngStorage'
 ])
 	.config(function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
-		$urlRouterProvider
-			.otherwise('/mutant');
+		$urlRouterProvider.otherwise('/mutant');
 
 		$locationProvider.html5Mode(true);
 		$httpProvider.interceptors.push('authInterceptor');
