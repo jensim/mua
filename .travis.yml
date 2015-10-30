@@ -12,7 +12,7 @@ matrix:
     - node_js: 'iojs'
 before_script:
   - gem install sass
-  - npm install -g bower grunt-cli
+  - npm install -g bower grunt-cli codecov
   - bower install
 cache:
   directories:
