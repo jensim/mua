@@ -43,7 +43,7 @@
 		"grunt-contrib-uglify": "~0.10.0",
 		"grunt-contrib-watch": "~0.6.1",
 		"grunt-contrib-jade": "^0.15.0",
-		"karma-babel-preprocessor": "^5.2.1",
+		"karma-babel-preprocessor": "^6.0.0",
 		"grunt-babel": "~6.0.0",
 		"grunt-google-cdn": "~0.4.0",
 		"grunt-newer": "~1.1.1",
