@@ -141,7 +141,7 @@
 					<div class="pull-right">&nbsp;</div>
 					<i class="pull-right fa" ng-class="storage.activeCharacter.attrSecBody ? 'fa-compress' : 'fa-expand' " ng-click="storage.activeCharacter.attrSecBody = !storage.activeCharacter.attrSecBody"></i>
                     <div class="pull-right">&nbsp;</div>
-                    <i class="glyphicon glyphicon-info-sign pull-right" ng-click="attrSecFormInfo = !attrSecFormInfo" ng-hide="attrSecFormEdit"></i>
+                    <i class="fa fa-info-circle pull-right" ng-click="attrSecFormInfo = !attrSecFormInfo" ng-hide="attrSecFormEdit"></i>
                     <div class="pull-right">&nbsp;</div>
                     <i class="fa fa-calculator pull-right" ng-click="calcSecAttr()" ng-show="attrSecFormEdit"></i>
                     <div class="pull-right">&nbsp;</div>
@@ -179,7 +179,7 @@
                     <div class="pull-right">&nbsp;</div>
                     <dice-roller dice="1D100" class="pull-right" />
                     <div class="pull-right">&nbsp;</div>
-                    <i class="glyphicon glyphicon-info-sign pull-right" ng-show="skillFormEdit"></i>
+                    <i class="fa fa-info-circle pull-right" ng-show="skillFormEdit"></i>
                 </h3>
 				</div>
 				<div class="panel-body" ng-hide="storage.activeCharacter.skillBody">
@@ -264,7 +264,7 @@
 								</li>
 								<li class="list-group-item list-group-item-info">
 									<div class="btn btn-warning btn-xs" ng-click="deleteSkill($index)">
-										<i class="glyphicon glyphicon-trash"></i> Ta bort
+										<i class="fa fa-trash-o"></i> Ta bort
 									</div>
 								</li>
 							</div>
@@ -287,7 +287,7 @@
 					<ul class="list-group">
 						<li class="list-group-item list-group-item-highlight" ng-repeat="p in storage.activeCharacter.powers | orderBy:['name']" ng-click="editPower(p)" ng-class="p === powerEdit ? 'list-group-item-info':''">
 							{{p.name}}
-							<div class="btn btn-danger glyphicon glyphicon-trash pull-right btn-xs" ng-click="deletePower($index)" ng-show="p === powerEdit">
+							<div class="btn btn-danger fa fa-trash-o pull-right btn-xs" ng-click="deletePower($index)" ng-show="p === powerEdit">
 							</div>
 						</li>
 					</ul>
@@ -369,7 +369,7 @@
 						<div style="display: inline-block;" class="pull-right">
 							<p>
 								<div class="btn btn-danger btn-sm" ng-click="deleteWeapon($index)">
-									<span class="glyphicon glyphicon-trash"></span>
+									<span class="fa fa-trash-o"></span>
 								</div>
 							</p>
 							<p>
@@ -530,7 +530,7 @@
 						</div>
 						<p>
 							<div class="btn btn-danger btn-sm" ng-click="deleteArmor(armorEdit)">
-								<div class="glyphicon glyphicon-trash"></div>
+								<div class="fa fa-trash-o"></div>
 							</div>
 							<div class="btn btn-danger btn-sm" ng-click="moneyManage(armorEdit.cost); deleteArmor(armorEdit);" ng-show="armorEdit.cost">
 								Sälj ({{armorEdit.cost}})
@@ -581,7 +581,7 @@
 						<li class="list-group-item" ng-repeat="i in storage.activeCharacter.items" ng-click="editItem(i)" ng-class="itemEdit===i?'active':''">
 							{{i.name}} : {{i.quantity}}
 							<div class="btn btn-xs btn-danger pull-right" ng-click="deleteItem($index)" ng-show="i === itemEdit">
-								<i class="glyphicon glyphicon-trash"></i>
+								<i class="fa fa-trash-o"></i>
 							</div>
 							<div class="pull-right">&nbsp;</div>
 							<div class="btn btn-xs btn-danger pull-right" ng-click="moneyManage(i.cost); deleteItem($index);" ng-show="i === itemEdit">
@@ -666,7 +666,7 @@
 						<li class="list-group-item" ng-repeat="n in storage.activeCharacter.notes" ng-click="editNote(n)" ng-class="n === noteEdit ? 'list-group-item-info':''">
 							<span class="glyphicon glyphicon-file"></span> {{n.head}}
 							<button class="btn btn-warning btn-sm pull-right" ng-click="deleteNote($index)">
-								<span class="glyphicon glyphicon-trash"></span>
+								<span class="fa fa-trash-o"></span>
 							</button>
 						</li>
 					</ul>
@@ -733,25 +733,25 @@
 				<div class="panel-body anim-fade" ng-hide="storage.loadCharacterBody">
 					<div class="list-group anim-fade">
 						<div class="list-group-item clearfix" ng-repeat="c in storage.characters" ng-class="c === storage.activeCharacter ? 'list-group-item-info':''">
-							<span class="glyphicon glyphicon-file"></span> {{c.name}}
+							<span class="fa fa-child"></span> {{c.name}}
 							<span class="pull-right">
-                        <button class="btn btn-sm btn-info" ng-click="loadCharacter(c)">
-                        	<span class="glyphicon glyphicon-cloud-download"></span> Ladda
+							<button class="btn btn-sm btn-info" ng-click="loadCharacter(c)" ng-show="c !== storage.activeCharacter">
+								<span class="fa fa-upload"></span> Ladda
 							</button>
 							<button class="btn btn-sm btn-warning" ng-click="deleteCharacter($index)" ng-show="c === storage.activeCharacter">
-								<span class="glyphicon glyphicon-trash"></span>
+								<span class="fa fa-trash-o"></span>
 							</button>
 							</span>
 						</div>
 					</div>
 					<button class="btn btn-sm btn-info pull-right" ng-click="loadCharacter()">
-						<span class="glyphicon glyphicon-plus"></span> Skapa ny
+						<span class="fa fa-user-plus"></span> Skapa ny
 					</button>
 					<button class="btn btn-sm btn-info" ng-click="resetStaticData()">
-						Återställ formulärdata
+						<i class="fa fa-plug"></i> Återställ formulärdata
 					</button>
 					<button class="btn btn-sm btn-info" ng-click="resetUserData()">
-						Återställ användardata
+						<i class="fa fa-ambulance"></i> Återställ användardata
 					</button>
 				</div>
 			</div>
