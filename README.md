@@ -12,7 +12,9 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 
 [![GitHub version](https://badge.fury.io/gh/jensim%2Fdd.png)](https://badge.fury.io/gh/jensim%2Fdd)
 
-[![codecov.io](https://codecov.io/github/jensim/dd/coverage.svg?branch=master)](https://codecov.io/github/jensim/dd?branch=master)
+[![bitHound Score](https://www.bithound.io/github/jensim/dd/badges/score.svg)](https://www.bithound.io/github/jensim/dd)
+
+[![bitHound Dependencies](https://www.bithound.io/github/jensim/dd/badges/dependencies.svg)](https://www.bithound.io/github/jensim/dd/master/dependencies/npm)
 
 # Content
 
