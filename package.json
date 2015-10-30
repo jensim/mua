@@ -3,6 +3,7 @@
 	"version": "0.0.0",
 	"main": "server/app.js",
 	"dependencies": {
+		"codecov.io": "~0.1.6",
 		"body-parser": "~1.14.1",
 		"composable-middleware": "^0.3.0",
 		"compression": "~1.6.0",
