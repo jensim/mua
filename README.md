@@ -6,6 +6,8 @@ This is a Swedish game, and therefor the gui is written in swedish.
 
 Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fullstack](https://github.com/DaftMonk/generator-angular-fullstack)
 
+# Project status
+
 [![Build Status](https://travis-ci.org/jensim/dd.png)](https://travis-ci.org/jensim/dd)
 
 [![Dependency Status](https://david-dm.org/jensim/dd.png)](https://david-dm.org/jensim/dd)
@@ -65,7 +67,7 @@ $ yo angular-fullstack:heroku
 
 ```bash
 $ rm -rf dist
-$ heroku git:clone -a dnd-tool dist
+$ heroku git:clone -a mua dist
 $ grunt
 $ cd dist
 $ grunt buildcontrol:heroku
