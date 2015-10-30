@@ -10,6 +10,8 @@ matrix:
   allow_failures:
     - node_js: '0.11'
     - node_js: 'iojs'
+before_install:
+  - pip install codecov
 before_script:
   - gem install sass
   - npm install -g bower grunt-cli
@@ -18,4 +20,5 @@ cache:
   directories:
     - node_modules
     - client/bower_components
-
+after_success:
+  - codecov
