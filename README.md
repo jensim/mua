@@ -20,6 +20,8 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 
 [![bitHound Dependencies](https://www.bithound.io/github/jensim/dd/badges/dependencies.svg)](https://www.bithound.io/github/jensim/dd/master/dependencies/npm)
 
+[![bitHound Dev Dependencies](https://www.bithound.io/github/jensim/dd/badges/devDependencies.svg)](https://www.bithound.io/github/jensim/dd/master/dependencies/npm)
+
 # Content
 
 * [Prerequisites](#prerequisites)
