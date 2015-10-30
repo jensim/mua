@@ -1,6 +1,8 @@
-Dnd-Tool
+Mutant: Undergångens Arvtagare, 
 ===
-Dungeons and Dragons 5, character building ang maintaining
+Character building tool in the web.
+This is a tool for the old school pen and paper role players that never remember to bring their character sheets or rule books. It is also a tool to simplify all the rules for calculations of BEG on skills and such.
+This is a Swedish game, and therefor the gui is written in swedish.
 
 Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fullstack](https://github.com/DaftMonk/generator-angular-fullstack)
 
