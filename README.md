@@ -12,6 +12,8 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 
 [![GitHub version](https://badge.fury.io/gh/jensim%2Fdd.png)](https://badge.fury.io/gh/jensim%2Fdd)
 
+[![codecov.io](https://codecov.io/github/jensim/dd/coverage.svg?branch=master)](https://codecov.io/github/jensim/dd?branch=master)
+
 # Content
 
 * [Prerequisites](#prerequisites)
