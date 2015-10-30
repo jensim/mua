@@ -107,6 +107,10 @@ $input-border: #ccc !default;
 //** `<input>` border radius
 $input-border-radius: $border-radius-base !default;
 $legend-color: #fff !default;
+//** Background color for textual input addons
+$input-group-addon-bg: input-bg !default;
+//** Border color for textual input addons
+$input-group-addon-border-color: $input-border !default;
 //== List group
 //
 //##

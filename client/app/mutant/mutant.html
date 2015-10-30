@@ -154,15 +154,13 @@
 							<div ng-hide="attrSecFormEdit">
 								{{a.name}} {{a.value}}
 							</div>
-							<div ng-show="attrSecFormEdit">
-								{{a.name}}
-								<input ng-model="a.value" maxlength="4" size="4">
-								<i class="fa fa-calculator pull-right" ng-click="calcSecAttr(a)"></i>
-								<br/>
-
+							<div ng-show="attrSecFormEdit" class="input-group">
+								<label class="control-label">{{a.name}}</label>
+								<input ng-model="a.value" maxlength="4" size="4" class="form-control">
+								<i class="fa fa-calculator input-group-addon" ng-click="calcSecAttr(a)"></i>
 							</div>
-							<div class="text-primary" style="font-size: 0.8em;" ng-show="attrSecFormEdit||attrSecFormInfo">
-								{{a.description}}
+							<div style="font-size: 0.8em;" ng-show="attrSecFormEdit||attrSecFormInfo">
+								<br/> {{a.description}}
 							</div>
 						</li>
 					</ul>
@@ -489,6 +487,7 @@
 				</div>
 				<div class="panel-heading" ng-show="armorFormEdit && !storage.activeCharacter.armorBody">
 					Rustningsdelar
+					<i class="fa pull-right" ng-click="armorFormEdit = !armorFormEdit" ng-class="armorFormEdit ? 'fa-cogs':'fa-cog'"></i>
 				</div>
 				<div class="panel-body" ng-show="armorFormEdit && !storage.activeCharacter.armorBody">
 					<ul class="list-group">
@@ -541,6 +540,7 @@
 				</div>
 				<div class="panel-heading" ng-show="armorFormEdit && !storage.activeCharacter.armorBody">
 					Köp rustning
+					<i class="fa pull-right" ng-click="armorFormEdit = !armorFormEdit" ng-class="armorFormEdit ? 'fa-cogs':'fa-cog'"></i>
 				</div>
 				<div class="panel-body" ng-show="armorFormEdit && !storage.activeCharacter.armorBody">
 					<div ng-show="create.armor.bodyPart || create.armor.multiPart">

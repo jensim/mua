@@ -41,4 +41,28 @@
 		background-color: $brand-danger;
 		//color: aliceblue;
 	}
+	dice-roller,
+	.fa-calculator,
+	.glyphicon-info-sign,
+	.fa-compress,
+	.fa-expand,
+	.fa-gog,
+	.fa-cogs {
+		-webkit-transition: text-shadow 0.2s linear;
+		-moz-transition: text-shadow 0.2s linear;
+		-ms-transition: text-shadow 0.2s linear;
+		-o-transition: text-shadow 0.2s linear;
+		transition: text-shadow 0.2s linear;
+	}
+	dice-roller:hover,
+	.fa-calculator:hover,
+	.glyphicon-info-sign:hover,
+	.fa-compress:hover,
+	.fa-expand:hover,
+	.fa-cog:hover,
+	.fa-cogs:hover {
+		//text-shadow: 3px 3px 10px black;
+		color: #000;
+		text-shadow: 0 0 5px $text-color;
+	}
 }
