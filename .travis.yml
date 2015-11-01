@@ -17,8 +17,6 @@ matrix:
 ### SCRIPTS ###
 before_script:
   - gem install sass
-  - npm install -g bower grunt-cli codecov.io istanbul
+  - npm install -g bower grunt-cli
   - bower install
-after_success:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec
-  - codecov
+
