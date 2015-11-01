@@ -16,7 +16,8 @@ module.exports = function (grunt) {
 		ngtemplates: 'grunt-angular-templates',
 		cdnify: 'grunt-google-cdn',
 		protractor: 'grunt-protractor-runner',
-		buildcontrol: 'grunt-build-control'
+		buildcontrol: 'grunt-build-control',
+		coveralls: 'grunt-karma-coveralls'
 	});
 
 	// Time how long tasks take. Can help when optimizing build times
@@ -602,6 +603,15 @@ module.exports = function (grunt) {
             '<%= yeoman.client %>/{app,components}/**/*.css'
           ]
 				}
+			}
+		},
+		coveralls: {
+			options: {
+				debug: true,
+				coverageDir: 'coverage',
+				dryRun: true,
+				force: true,
+				recursive: true
 			}
 		},
 	});

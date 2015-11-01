@@ -51,7 +51,7 @@ module.exports = function (config) {
 		  	'client/app/**/*.html',
 		  	'client/components/**/*.html'
     	],
-		reporters: ['progress', 'coverage'],
+		reporters: ['coverage'],
 
 		preprocessors: {
 			'**/*.jade': 'ng-jade2js',
@@ -61,7 +61,7 @@ module.exports = function (config) {
 		},
 
 		coverageReporter: {
-			type: 'html',
+			type: 'lcov',
 			dir: 'coverage/'
 		},
 
