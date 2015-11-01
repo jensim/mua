@@ -22,6 +22,8 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 
 [![bitHound Dev Dependencies](https://www.bithound.io/github/jensim/dd/badges/devDependencies.svg)](https://www.bithound.io/github/jensim/dd/master/dependencies/npm)
 
+[![Coverage Status](https://coveralls.io/repos/jensim/dd/badge.svg?branch=master&service=github)](https://coveralls.io/github/jensim/dd?branch=master)
+
 # Content
 
 * [Prerequisites](#prerequisites)
