@@ -1,6 +1,7 @@
 node_modules
 public
 coverage
+.coveralls.yml
 .tmp
 .sass-cache
 .idea

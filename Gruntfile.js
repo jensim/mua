@@ -173,13 +173,14 @@ module.exports = function (grunt) {
 				files: [{
 					dot: true,
 					src: [
-            '.tmp',
-            '<%= yeoman.dist %>/*',
-            '!<%= yeoman.dist %>/.git*',
-            '!<%= yeoman.dist %>/.openshift',
-            '!<%= yeoman.dist %>/Procfile'
-          ]
-        }]
+						'.tmp',
+						'<%= yeoman.dist %>/*',
+						'!<%= yeoman.dist %>/.git*',
+						'!<%= yeoman.dist %>/.openshift',
+						'!<%= yeoman.dist %>/Procfile',
+						'coveralls'
+					]
+				}]
 			},
 			server: '.tmp'
 		},
@@ -726,8 +727,9 @@ module.exports = function (grunt) {
   ]);
 
 	grunt.registerTask('default', [
-    'newer:jshint',
-    'test',
-    'build'
+    	'newer:jshint',
+    	'test',
+    	'build',
+		'coveralls'
   ]);
 };
