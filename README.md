@@ -24,6 +24,8 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 
 [![Coverage Status](https://coveralls.io/repos/jensim/dd/badge.svg?branch=master&service=github)](https://coveralls.io/github/jensim/dd?branch=master)
 
+[![LICENCE](https://img.shields.io/badge/LICENCE-GPLv3-blue.svg)](LICENSE.txt)
+
 # Content
 
 * [Prerequisites](#prerequisites)
