@@ -26,7 +26,7 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 
 [![LICENCE](https://img.shields.io/badge/LICENCE-GPLv3-blue.svg)](LICENSE.txt)
 
-[![ISSUES](https://img.shields.io/github/issues/jensim/dd.svg)](https://github.com/jensim/dd/issues)
+[![Creative Commons](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Content
 
