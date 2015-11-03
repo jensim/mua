@@ -7,7 +7,8 @@ angular.module('dndToolApp').controller('NavbarCtrl', function ($scope, $locatio
 			'link': '/'
 		}, {
 			'title': 'År noll',
-			'link': '/zero'
+			'link': '/zero',
+			'disabled': true
 		}
 	];
 
