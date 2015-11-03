@@ -8,21 +8,21 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 
 # Project status
 
-[![Build Status](https://travis-ci.org/jensim/dd.png)](https://travis-ci.org/jensim/dd)
+[![Build Status](https://travis-ci.org/jensim/mua.png)](https://travis-ci.org/jensim/mua)
 
-[![Dependency Status](https://david-dm.org/jensim/dd.png)](https://david-dm.org/jensim/dd)
+[![Dependency Status](https://david-dm.org/jensim/mua.png)](https://david-dm.org/jensim/mua)
 
-[![devDependency Status](https://david-dm.org/jensim/dd/dev-status.png)](https://david-dm.org/jensim/dd#info=devDependencies)
+[![devDependency Status](https://david-dm.org/jensim/mua/dev-status.png)](https://david-dm.org/jensim/mua#info=devDependencies)
 
-[![GitHub version](https://badge.fury.io/gh/jensim%2Fdd.png)](https://badge.fury.io/gh/jensim%2Fdd)
+[![GitHub version](https://badge.fury.io/gh/jensim%2Fmua.png)](https://badge.fury.io/gh/jensim%2Fmua)
 
-[![bitHound Score](https://www.bithound.io/github/jensim/dd/badges/score.svg)](https://www.bithound.io/github/jensim/dd)
+[![bitHound Score](https://www.bithound.io/github/jensim/mua/badges/score.svg)](https://www.bithound.io/github/jensim/mua)
 
-[![bitHound Dependencies](https://www.bithound.io/github/jensim/dd/badges/dependencies.svg)](https://www.bithound.io/github/jensim/dd/master/dependencies/npm)
+[![bitHound Dependencies](https://www.bithound.io/github/jensim/mua/badges/dependencies.svg)](https://www.bithound.io/github/jensim/mua/master/dependencies/npm)
 
-[![bitHound Dev Dependencies](https://www.bithound.io/github/jensim/dd/badges/devDependencies.svg)](https://www.bithound.io/github/jensim/dd/master/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/jensim/mua/badges/devDependencies.svg)](https://www.bithound.io/github/jensim/mua/master/dependencies/npm)
 
-[![Coverage Status](https://coveralls.io/repos/jensim/dd/badge.svg?branch=master&service=github)](https://coveralls.io/github/jensim/dd?branch=master)
+[![Coverage Status](https://coveralls.io/repos/jensim/mua/badge.svg?branch=master&service=github)](https://coveralls.io/github/jensim/mua?branch=master)
 
 [![LICENCE](https://img.shields.io/badge/LICENCE-GPLv3-blue.svg)](LICENSE.txt)
 
