@@ -1,7 +1,9 @@
 $fa-font-path: '/bower_components/font-awesome/fonts';
+$fi-path: '/bower_components/foundation-icon-fonts/';
+$icon-font-path: '/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
 @import '../assets/bootstrap-var-override/bootstrap-var-override';
 @import 'font-awesome/scss/font-awesome';
-@import 'foundation-icon-fonts/_foundation-icons';
+@import 'foundation-icon-fonts/foundation-icons';
 @import 'bootstrap-sass-official/assets/stylesheets/bootstrap';
 
 /**
