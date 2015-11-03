@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dd by jensim</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/jensim/dd">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/jensim/dd/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/jensim/dd/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Dd</h1>
+          <p>Mutant: UA character builder in the web with localStorage</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/jensim">jensim</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="mutant-undergångens-arvtagare-" class="anchor" href="#mutant-underg%C3%A5ngens-arvtagare-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mutant: Undergångens Arvtagare, </h1>
+
+<p>Character building tool in the web.
+This is a tool for the old school pen and paper role players that never remember to bring their character sheets or rule books. It is also a tool to simplify all the rules for calculations of BEG on skills and such.
+This is a Swedish game, and therefor the gui is written in swedish.</p>
+
+<p>Scaffolded from The lovely <a href="https://yeoman.io/">Yeoman</a> generator <a href="https://github.com/DaftMonk/generator-angular-fullstack">Angular fullstack</a></p>
+
+<h1>
+<a id="project-status" class="anchor" href="#project-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project status</h1>
+
+<p><a href="https://travis-ci.org/jensim/dd"><img src="https://travis-ci.org/jensim/dd.png" alt="Build Status"></a></p>
+
+<p><a href="https://david-dm.org/jensim/dd"><img src="https://david-dm.org/jensim/dd.png" alt="Dependency Status"></a></p>
+
+<p><a href="https://david-dm.org/jensim/dd#info=devDependencies"><img src="https://david-dm.org/jensim/dd/dev-status.png" alt="devDependency Status"></a></p>
+
+<p><a href="https://badge.fury.io/gh/jensim%2Fdd"><img src="https://badge.fury.io/gh/jensim%2Fdd.png" alt="GitHub version"></a></p>
+
+<p><a href="https://www.bithound.io/github/jensim/dd"><img src="https://www.bithound.io/github/jensim/dd/badges/score.svg" alt="bitHound Score"></a></p>
+
+<p><a href="https://www.bithound.io/github/jensim/dd/master/dependencies/npm"><img src="https://www.bithound.io/github/jensim/dd/badges/dependencies.svg" alt="bitHound Dependencies"></a></p>
+
+<p><a href="https://www.bithound.io/github/jensim/dd/master/dependencies/npm"><img src="https://www.bithound.io/github/jensim/dd/badges/devDependencies.svg" alt="bitHound Dev Dependencies"></a></p>
+
+<p><a href="https://coveralls.io/github/jensim/dd?branch=master"><img src="https://coveralls.io/repos/jensim/dd/badge.svg?branch=master&amp;service=github" alt="Coverage Status"></a></p>
+
+<p><a href="LICENSE.txt"><img src="https://img.shields.io/badge/LICENCE-GPLv3-blue.svg" alt="LICENCE"></a></p>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Creative Commons"></a></p>
+
+<h1>
+<a id="content" class="anchor" href="#content" aria-hidden="true"><span class="octicon octicon-link"></span></a>Content</h1>
+
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#developing">Developing</a></li>
+<li>Pushing to Heroku
+
+<ul>
+<li>
+<a href="#first-time">First time</a>
+
+<ul>
+<li><a href="#deploy-first-time-to-old-heroku-repo">Deploy first time, to old heroku repo</a></li>
+</ul>
+</li>
+<li><a href="#again-and-again">Again and again</a></li>
+</ul>
+</li>
+</ul>
+
+<h1>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h1>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install -g bower grunt grunt-cli</pre></div>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<div class="highlight highlight-source-shell"><pre>$ bower install
+$ grunt</pre></div>
+
+<h1>
+<a id="developing" class="anchor" href="#developing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Developing</h1>
+
+<div class="highlight highlight-source-shell"><pre>$ grunt serve</pre></div>
+
+<h2>
+<a id="pushing-to-heroku" class="anchor" href="#pushing-to-heroku" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pushing to Heroku</h2>
+
+<h3>
+<a id="first-time" class="anchor" href="#first-time" aria-hidden="true"><span class="octicon octicon-link"></span></a>First time</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ grunt
+$ <span class="pl-c1">cd</span> dist
+$ heroku login
+$ <span class="pl-c"># Username</span>
+$ <span class="pl-c"># Password</span>
+$ heroku addons:create mongolab
+$ yo angular-fullstack:heroku</pre></div>
+
+<h3>
+<a id="deploy-first-time-to-old-heroku-repo" class="anchor" href="#deploy-first-time-to-old-heroku-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deploy first time, to old heroku repo</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ rm -rf dist
+$ heroku git:clone -a mua dist
+$ grunt
+$ <span class="pl-c1">cd</span> dist
+$ grunt buildcontrol:heroku</pre></div>
+
+<h2>
+<a id="again-and-again" class="anchor" href="#again-and-again" aria-hidden="true"><span class="octicon octicon-link"></span></a>Again and again</h2>
+
+<div class="highlight highlight-source-shell"><pre>$ grunt
+$ <span class="pl-c1">cd</span> dist
+$ grunt buildcontrol:heroku</pre></div>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
