@@ -1,13 +1,9 @@
-Mutant: Undergångens Arvtagare, 
-===
-Character building tool in the web.
-This is a tool for the old school pen and paper role players that never remember to bring their character sheets or rule books. It is also a tool to simplify all the rules for calculations of BEG on skills and such.
-This is a Swedish game, and therefor the gui is written in swedish.
+# Mutant: Undergångens Arvtagare,
+Character building tool in the web. This is a tool for the old school pen and paper role players that never remember to bring their character sheets or rule books. It is also a tool to simplify all the rules for calculations of BEG on skills and such. This is a Swedish game, and therefor the gui is written in swedish.
 
 Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fullstack](https://github.com/DaftMonk/generator-angular-fullstack)
 
 # Project status
-
 [![Build Status](https://travis-ci.org/jensim/mua.png)](https://travis-ci.org/jensim/mua)
 
 [![Dependency Status](https://david-dm.org/jensim/mua.png)](https://david-dm.org/jensim/mua)
@@ -29,14 +25,13 @@ Scaffolded from The lovely [Yeoman](https://yeoman.io/) generator [Angular fulls
 [![Creative Commons](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 # Content
-
-* [Prerequisites](#prerequisites)
-* [Installation](#installation)
-* [Developing](#developing)
-* Pushing to Heroku
-  * [First time](#first-time)
-    * [Deploy first time, to old heroku repo](#deploy-first-time-to-old-heroku-repo)
-  * [Again and again](#again-and-again)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Developing](#developing)
+- Pushing to Heroku
+  - [First time](#first-time)
+    - [Deploy first time, to old heroku repo](#deploy-first-time-to-old-heroku-repo)
+  - [Again and again](#again-and-again)
 
 # Prerequisites
 
@@ -58,7 +53,6 @@ $ grunt serve
 ```
 
 ## Pushing to Heroku
-
 ### First time
 
 ```bash
@@ -80,7 +74,6 @@ $ grunt
 $ cd dist
 $ grunt buildcontrol:heroku
 ```
-
 
 ## Again and again
 
