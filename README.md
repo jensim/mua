@@ -75,10 +75,11 @@ $ cd dist
 $ grunt buildcontrol:heroku
 ```
 
+
 ## Again and again
 
 ```bash
 $ grunt
 $ cd dist
-$ grunt buildcontrol:heroku
+$ grunt buildcontrol:heroku 
 ```
