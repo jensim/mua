@@ -14,7 +14,6 @@ module.exports = function(config) {
       "karma-chrome-launcher",
       "karma-coffee-preprocessor",
       "karma-coverage",
-      "karma-firefox-launcher",
       "karma-html2js-preprocessor",
       "karma-jade-preprocessor",
       "karma-jasmine",
