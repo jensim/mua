@@ -3,6 +3,8 @@ services: mongodb
 language: node_js
 node_js:
   - 6.11.1
+rvm:
+  - 2.2
 cache:
   directories:
     - node_modules
