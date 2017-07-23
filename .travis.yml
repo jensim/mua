@@ -3,14 +3,13 @@ services: mongodb
 language: node_js
 node_js:
   - 6.11.1
-rvm:
-  - 2.2
 cache:
   directories:
     - node_modules
     - client/bower_components
 ### SCRIPTS ###
 before_script:
+  - rvm install 2.2
   - gem install sass
   - npm install -g bower grunt-cli
   - bower install
